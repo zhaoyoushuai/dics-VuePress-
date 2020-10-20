@@ -23,5 +23,8 @@
     "bash": "0.0.1",
     "moment": "^2.29.1",
     "sh": "0.0.3"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.7.1"
   }
 }

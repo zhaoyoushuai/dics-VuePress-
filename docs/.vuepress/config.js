@@ -2,13 +2,13 @@ const moment = require('moment');
 moment.locale('zh-cn')
 
 module.exports = {
-    base:'/docs/',
     title: "Zsin",
     description: "前端笔记",
     head: [
         ['link', { rel: 'icon', href: '/assets/img/favicon.ico' }],
         ['meta', { name: 'author', content: 'Zsin' }],
-        ['meta', { name: 'Keywords', content: 'vuepress 介绍, vuepress 说明, 前端笔记' }]
+        ['meta', { name: 'Keywords', content: 'vuepress 介绍, vuepress 说明, 前端笔记' }],
+        
 
     ],
     plugins: [
@@ -17,6 +17,15 @@ module.exports = {
             {
                 transformer: (timestamp, lang) => {
                     return moment(timestamp).format('LLLL')
+                }
+            }
+        ],
+        [
+            '@vuepress/pwa', {
+                serviceWorker: true,
+                updatePopup: {
+                    message: "发现新内容可用",
+                    buttonText: "刷新"
                 }
             }
         ]
