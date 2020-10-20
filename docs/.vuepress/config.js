@@ -1,3 +1,6 @@
+const moment = require('moment');
+moment.locale('zh-cn')
+
 module.exports = {
     title: "Zsin",
     description: "前端笔记",
@@ -6,6 +9,16 @@ module.exports = {
         ['meta', { name: 'author', content: 'Zsin' }],
         ['meta', { name: 'Keywords', content: 'vuepress 介绍, vuepress 说明, 前端笔记' }]
 
+    ],
+    plugins: [
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp, lang) => {
+                    return moment(timestamp).format('LLLL')
+                }
+            }
+        ]
     ],
     themeConfig: {
         // navbar: false,
