@@ -11,49 +11,49 @@ module.exports = {
 
 
     ],
-    // plugins: {
-    //     '@vuepress/last-updated': {
-    //         transformer: (timestamp, lang) => {moment(timestamp).format('LLLL')}
-    //     },
-    //     '@vuepress/pwa': {
-    //         serviceWorker: true,
-    //         updatePopup: {
-    //             message: "发现新内容可用",
-    //             buttonText: "刷新"
-    //         }
-    //     },
-    //     '@vssue/vuepress-plugin-vssue': {
-    //         // 设置 `platform` 而不是 `api`
-    //         platform: 'github-v4',
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp, lang) => {moment(timestamp).format('LLLL')}
+        },
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: {
+                message: "发现新内容可用",
+                buttonText: "刷新"
+            }
+        },
+        '@vssue/vuepress-plugin-vssue': {
+            // 设置 `platform` 而不是 `api`
+            platform: 'github-v4',
 
-    //         // 其他的 Vssue 配置
-    //         owner: 'zhaoyoushuai',
-    //         repo: 'docs',
-    //         clientId: '07f39e7eccd48abcf730',
-    //         clientSecret: 'ddc9bdada5d4a3647970f9ee7fc342f3498a9285',
-    //     },
-    // },
-    plugins: [
-        [
-            '@vuepress/last-updated',
-            {
-                transformer: (timestamp, lang) => {
-                    // 不要忘了安装 moment
-                    return moment(timestamp).format('LLLL')
-                }
-            }
-        ],
-        [
-            '@vuepress/pwa',
-            {
-                serviceWorker: true,
-                updatePopup: {
-                    message: "发现新内容可用",
-                    buttonText: "刷新"
-                }
-            }
-        ]
-    ],
+            // 其他的 Vssue 配置
+            owner: 'zhaoyoushuai',
+            repo: 'docs',
+            clientId: '07f39e7eccd48abcf730',
+            clientSecret: 'ddc9bdada5d4a3647970f9ee7fc342f3498a9285',
+        },
+    },
+    // plugins: [
+    //     [
+    //         '@vuepress/last-updated',
+    //         {
+    //             transformer: (timestamp, lang) => {
+    //                 // 不要忘了安装 moment
+    //                 return moment(timestamp).format('LLLL')
+    //             }
+    //         }
+    //     ],
+    //     [
+    //         '@vuepress/pwa',
+    //         {
+    //             serviceWorker: true,
+    //             updatePopup: {
+    //                 message: "发现新内容可用",
+    //                 buttonText: "刷新"
+    //             }
+    //         }
+    //     ]
+    // ],
     themeConfig: {
         // navbar: false,
         logo: '/assets/img/hero.png',
