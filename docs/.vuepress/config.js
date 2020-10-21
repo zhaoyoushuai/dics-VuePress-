@@ -13,7 +13,7 @@ module.exports = {
     ],
     plugins: {
         '@vuepress/last-updated': {
-            transformer: (timestamp, lang) => {moment(timestamp).format('LLLL')}
+            transformer: (timestamp) => moment(timestamp).format('LLLL')
         },
         '@vuepress/pwa': {
             serviceWorker: true,
