@@ -1,11 +1,10 @@
 ---
-navbar: false
-title: js-b
+title: git
 ---
 
-## js-bbb
+## git
 
-热爱生活,喜欢睡觉
+ git相关命令
 
 
 ## 一级标题

@@ -1,11 +1,10 @@
 ---
-navbar: false
-title: js-c
+title: Vue-router
 ---
 
-## js-ccc
+## Vue-router
 
-热爱生活,喜欢睡觉
+vue路由
 
 
 ## 一级标题

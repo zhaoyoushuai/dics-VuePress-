@@ -1,11 +1,10 @@
 ---
-navbar: false
-title: cs-c
+title: 常用方法
 ---
 
-## css-c
+## 常用方法
 
-热爱生活,喜欢睡觉
+常用方法
 
 
 ## 一级标题
