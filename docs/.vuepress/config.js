@@ -2,14 +2,12 @@ const moment = require('moment');
 moment.locale('zh-cn')
 
 module.exports = {
-    title: "Zsin",
-    description: "前端笔记",
+    title: "前端清单",
+    description: "前端清单",
     head: [
         ['link', { rel: 'icon', href: '/assets/img/favicon.ico' }],
         ['meta', { name: 'author', content: 'Zsin' }],
         ['meta', { name: 'Keywords', content: 'vuepress 介绍, vuepress 说明, 前端笔记' }],
-
-
     ],
     plugins: {
         '@vuepress/last-updated': {
@@ -27,17 +25,7 @@ module.exports = {
         // navbar: false,
         logo: '/assets/img/hero.png',
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/about.html' },
-            {
-                text: 'Languages',
-                ariaLabel: 'Language Menu',
-                items: [
-                    { text: 'Chinese', link: '/language/chinese/' },
-                    { text: 'Japanese', link: '/language/japanese/' }
-                ]
-            },
-            { text: 'External', link: 'https://google.com' },
+            { text: 'GitHub', link: 'https://github.com/zhaoyoushuai/docs' },
         ],
         sidebar: [
             {
@@ -45,12 +33,32 @@ module.exports = {
                 path: '/vue/'
             },
             {
+                title: 'React',
+                children: ['react/']
+            },
+            {
+                title: 'Taro',
+                children: ['taro/']
+            },
+            {
                 title: 'Git',
                 children: ['git/']
             },
             {
+                title: 'Node',
+                children: ['node/']
+            },
+            {
+                title: '微信小程序',
+                children: ['wx/']
+            },
+            {
                 title: '工具方法',
-                children: ['utils/', 'utils/skill']
+                children: ['utils/regexp', 'utils/skill']
+            },
+            {
+                title: 'BUG',
+                children: ['bug/']
             },
         ],
         lastUpdated: '更新时间', // string | boolean
