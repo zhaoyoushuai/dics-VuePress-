@@ -30,7 +30,7 @@ module.exports = {
         sidebar: [
             {
                 title: 'Vue',
-                path: '/vue/'
+                children: ['vue/']
             },
             {
                 title: 'React',
@@ -50,7 +50,7 @@ module.exports = {
             },
             {
                 title: '微信小程序',
-                children: ['wx/']
+                children: ['wx/','wx/subpackage']
             },
             {
                 title: '工具方法',
