@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 title: 'Taro',
-                children: ['taro/']
+                children: ['taro/','taro/common']
             },
             {
                 title: 'Git',

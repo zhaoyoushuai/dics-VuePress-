@@ -2,7 +2,7 @@
 home: true
 heroImage: /assets/img/hero.png
 heroText: 黎
-tagline: 写代码是热爱,写到世界充满爱
+tagline: 前端&代码&热爱
 actionText: 快速上手 →
 actionLink: /utils/regexp
 features:
