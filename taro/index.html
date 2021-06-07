@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>taro-deploy自动化部署(保姆版) | 前端清单</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <meta name="description" content="前端清单">
+    <meta name="author" content="Zsin">
+    <meta name="Keywords" content="vuepress 介绍, vuepress 说明, 前端笔记">
+    
+    <link rel="preload" href="/assets/css/0.styles.5d61dfff.css" as="style"><link rel="preload" href="/assets/js/app.573ade0d.js" as="script"><link rel="preload" href="/assets/js/2.49180a5f.js" as="script"><link rel="preload" href="/assets/js/14.e4a52496.js" as="script"><link rel="preload" href="/assets/js/3.a7939cb3.js" as="script"><link rel="prefetch" href="/assets/js/10.49efdb74.js"><link rel="prefetch" href="/assets/js/11.90ec52ca.js"><link rel="prefetch" href="/assets/js/12.a7d673a6.js"><link rel="prefetch" href="/assets/js/13.1340c431.js"><link rel="prefetch" href="/assets/js/15.7e7f2a77.js"><link rel="prefetch" href="/assets/js/16.7fa03481.js"><link rel="prefetch" href="/assets/js/17.9ebe67e2.js"><link rel="prefetch" href="/assets/js/18.c4c3b078.js"><link rel="prefetch" href="/assets/js/19.e92599f6.js"><link rel="prefetch" href="/assets/js/20.f7a193a8.js"><link rel="prefetch" href="/assets/js/21.3018e3dc.js"><link rel="prefetch" href="/assets/js/22.c19b2bf2.js"><link rel="prefetch" href="/assets/js/4.cbfd6297.js"><link rel="prefetch" href="/assets/js/5.bca9cb51.js"><link rel="prefetch" href="/assets/js/6.5820bcc6.js"><link rel="prefetch" href="/assets/js/7.b3fc0064.js"><link rel="prefetch" href="/assets/js/8.8f2eb329.js"><link rel="prefetch" href="/assets/js/9.63e5d6f7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5d61dfff.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="前端清单" class="logo"> <span class="site-name can-hide">前端清单</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/zhaoyoushuai/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/zhaoyoushuai/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Taro</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/taro/" aria-current="page" class="active sidebar-link">taro-deploy自动化部署(保姆版)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/taro/#使用自动化部署的原因" class="sidebar-link">使用自动化部署的原因</a></li><li class="sidebar-sub-header"><a href="/taro/#_1-安装taro-deploy" class="sidebar-link">1. 安装taro-deploy</a></li><li class="sidebar-sub-header"><a href="/taro/#_2-准备小程序密钥" class="sidebar-link">2. 准备小程序密钥</a></li><li class="sidebar-sub-header"><a href="/taro/#_3-创建钉钉提醒机器人-pc端" class="sidebar-link">3.创建钉钉提醒机器人(pc端)</a></li><li class="sidebar-sub-header"><a href="/taro/#_4-添加配置文件" class="sidebar-link">4.添加配置文件</a></li><li class="sidebar-sub-header"><a href="/taro/#_5-运行taro-deploy" class="sidebar-link">5.运行taro-deploy</a></li><li class="sidebar-sub-header"><a href="/taro/#部分bug" class="sidebar-link">部分BUG</a></li></ul></li><li><a href="/taro/common.html" class="sidebar-link">taro中拦截器模板</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具方法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>BUG</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="taro-deploy自动化部署-保姆版"><a href="#taro-deploy自动化部署-保姆版" class="header-anchor">#</a> taro-deploy自动化部署(保姆版)</h1> <h2 id="使用自动化部署的原因"><a href="#使用自动化部署的原因" class="header-anchor">#</a> 使用自动化部署的原因</h2> <h4 id="在使用taro中经常遇到的流程"><a href="#在使用taro中经常遇到的流程" class="header-anchor">#</a> 在使用Taro中经常遇到的流程</h4> <blockquote><ol><li>开发完之后执行build命令</li> <li>打开小程序发布新版本</li> <li>去微信开发者网站设置为体验版</li> <li>将二维码发送给测试人员</li></ol></blockquote> <p>以上4个步骤表面看起来很简单，但是每次操作都会占用10-20分钟的时间，效率很低。
+taro-deploy自动化部署的优势在于将上面步骤化繁为简，你需要做的就是执行一句命令，然后去上个厕所遛个弯，等待构建结果即可！</p> <h2 id="_1-安装taro-deploy"><a href="#_1-安装taro-deploy" class="header-anchor">#</a> 1. 安装taro-deploy</h2> <div class="language-js extra-class"><pre class="language-js"><code>npm i <span class="token operator">-</span>g taro<span class="token operator">-</span>deploy
+</code></pre></div><h2 id="_2-准备小程序密钥"><a href="#_2-准备小程序密钥" class="header-anchor">#</a> 2. 准备小程序密钥</h2> <ul><li><p>把密钥下载到本地
+<img src="/assets/img/taro/taro1.png" alt="下载到本地密钥"></p></li> <li><p>把本地IP添加到白名单</p></li></ul> <p><img src="/assets/img/taro/taro2.png" alt="添加白名单"></p> <h2 id="_3-创建钉钉提醒机器人-pc端"><a href="#_3-创建钉钉提醒机器人-pc端" class="header-anchor">#</a> 3.创建钉钉提醒机器人(pc端)</h2> <ul><li>点击头像，机器人管理</li></ul> <p><img src="/assets/img/taro/taro3.png" alt="实例"></p> <ul><li>点击自定义机器人</li></ul> <p><img src="/assets/img/taro/taro4.png" alt="实例"></p> <ul><li>自定义关键词填上小程序构建。</li></ul> <p><img src="/assets/img/taro/taro5.png" alt="实例"></p> <ul><li>构建完成，保存<code>webhook url</code></li></ul> <p><img src="/assets/img/taro/taro6.png" alt="实例"></p> <h2 id="_4-添加配置文件"><a href="#_4-添加配置文件" class="header-anchor">#</a> 4.添加配置文件</h2> <ul><li>在Taro项目根目录添加一个<code>deploy-config.js</code>文件内容给如下</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// deploy-config.js</span>
+<span class="token comment">// 该文件应放在 Taro 项目的根目录下</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 构建结果的输出目录，该脚本产生的日志也会输出到这里</span>
+  outDir<span class="token operator">:</span> <span class="token string">'./deploy-out'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 微信相关配置</span>
+  weapp<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 如果为 false，则不会运行微信的构建流程</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 这里填你们配置的 Taro 编译后微信程序包的输出路径</span>
+    projectPath<span class="token operator">:</span> <span class="token string">'./dist/weapp'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Step 2 里获得的私钥文件的存放路径</span>
+    keyPath<span class="token operator">:</span> <span class="token string">'./weapp.key'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 微信小程序 appId</span>
+    appId<span class="token operator">:</span> <span class="token string">'wx82xxxxxx'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 微信体验版图片地址</span>
+    <span class="token comment">// 微信的体验版地址是一直不变的因此需要在这里配置该二维码图片的链接</span>
+    <span class="token comment">// 直接从微信公众平台上复制的体验版图片地址貌似无法在钉钉里正常展示</span>
+    <span class="token comment">// 建议转存到自己的 CDN 上，再将 cdn url 填到下面这里来</span>
+    qrcodeImageUrl<span class="token operator">:</span> <span class="token string">'https://xxxcdn.con/image/weapp-exp-qrcode.jpg'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 小程序版本号</span>
+    <span class="token comment">// 由于微信的命令行 sdk 不支持设置某个版本为体验版，要改设体验版需要在网页上手动操作</span>
+    <span class="token comment">// 所以只能曲线救国，先在网页上将本工具上传的版本设为体验版（找到 ci机器人1 上传的那个版本）</span>
+    <span class="token comment">// 然后每次上传都指定同一个版本号，以覆盖旧的版本，最终实现发布新体验版的效果</span>
+    version<span class="token operator">:</span> <span class="token string">'1.1.0'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// true 则将跳过编译阶段，即 taro build 命令，</span>
+    skipBuild<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+
+  <span class="token comment">// 默认发体验版，填 false 则发布为预览版</span>
+  <span class="token comment">// 注意如果发布为预览版，需要实现 uploadImage 的函数，否则钉钉无法展示预览版的二维码</span>
+  isExperience<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 是否在构建前运行 npm install</span>
+  npmInstall<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 指定环境变量，会在编译阶段，即 taro build 的指令中注入指定的环境变量</span>
+  env<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token constant">BUILD_ENV</span><span class="token operator">:</span> <span class="token string">'test'</span> <span class="token comment">// 仅作 demo，实际应填入你项目编译需要用的环境变量</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Step 3 中获取的钉钉机器人 webhook url</span>
+  dingTalkUrl<span class="token operator">:</span> <span class="token string">'https://oapi.dingtalk.com/robot/send?access_token=xxx'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 如果你只需要构建发布体验版小程序，则可忽略以下函数</span>
+  <span class="token comment">// 如果你需要构建发布预览版小程序，则需要实现该函数，将本地二维码图片文件转换为图片链接，否则无法将预览版二维码推送到钉钉群里</span>
+  <span class="token comment">// 其中 objectName 形如 {platform}-{timestamp}.jpg，作为建议保存的文件名</span>
+  <span class="token comment">// filePath 为本地预览版二维码图片的路径</span>
+  <span class="token function-variable function">uploadImage</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">objectName<span class="token punctuation">,</span> filePath</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">''</span>
+    <span class="token comment">// 如果你使用阿里云 oss 作 cdn，可以参考以下代码进行上传</span>
+    <span class="token comment">// const OSS = require('ali-oss')</span>
+    <span class="token comment">// const client = new OSS({</span>
+    <span class="token comment">//   region: 'oss-cn-xxx',</span>
+    <span class="token comment">//   accessKeyId: 'xxx',</span>
+    <span class="token comment">//   accessKeySecret: 'xxx',</span>
+    <span class="token comment">//   bucket: 'xxx',</span>
+    <span class="token comment">// })</span>
+    <span class="token comment">// await client.put(`preview/${objectName}`, filePath, {</span>
+    <span class="token comment">//   'Cache-Control': 'max-age=31536000'</span>
+    <span class="token comment">// })</span>
+    <span class="token comment">// return `https://xxx-oss-cdn.com/preview/${objectName}`</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="_5-运行taro-deploy"><a href="#_5-运行taro-deploy" class="header-anchor">#</a> 5.运行taro-deploy</h2> <div class="language-js extra-class"><pre class="language-js"><code>taro<span class="token operator">-</span>deploy
+</code></pre></div><ul><li>等待结果</li></ul> <p><img src="/assets/img/taro/taro7.png" alt="实例"></p> <h2 id="部分bug"><a href="#部分bug" class="header-anchor">#</a> 部分BUG</h2> <h3 id="部分w10编译错误如下"><a href="#部分w10编译错误如下" class="header-anchor">#</a> 部分W10编译错误如下</h3> <div class="language-js extra-class"><pre class="language-js"><code>Skip npm install<span class="token punctuation">.</span>
+Weapp<span class="token operator">:</span> 正在编译<span class="token operator">...</span>
+error<span class="token operator">:</span> spawn npx <span class="token constant">ENOENT</span>
+Error<span class="token operator">:</span> spawn npx <span class="token constant">ENOENT</span>
+at Process<span class="token punctuation">.</span>ChildProcess<span class="token punctuation">.</span>_handle<span class="token punctuation">.</span><span class="token function">onexit</span> <span class="token punctuation">(</span>internal<span class="token operator">/</span>child_process<span class="token punctuation">.</span>js<span class="token operator">:</span><span class="token number">267</span><span class="token operator">:</span><span class="token number">19</span><span class="token punctuation">)</span>
+at <span class="token function">onErrorNT</span> <span class="token punctuation">(</span>internal<span class="token operator">/</span>child_process<span class="token punctuation">.</span>js<span class="token operator">:</span><span class="token number">469</span><span class="token operator">:</span><span class="token number">16</span><span class="token punctuation">)</span>
+at <span class="token function">processTicksAndRejections</span> <span class="token punctuation">(</span><span class="token parameter">internal<span class="token operator">/</span>process<span class="token operator">/</span>task_queues<span class="token punctuation">.</span>js<span class="token operator">:</span><span class="token number">84</span><span class="token operator">:</span><span class="token number">21</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+errno<span class="token operator">:</span> <span class="token string">'ENOENT'</span><span class="token punctuation">,</span>
+code<span class="token operator">:</span> <span class="token string">'ENOENT'</span><span class="token punctuation">,</span>
+syscall<span class="token operator">:</span> <span class="token string">'spawn npx'</span><span class="token punctuation">,</span>
+path<span class="token operator">:</span> <span class="token string">'npx'</span><span class="token punctuation">,</span>
+spawnargs<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">'taro'</span><span class="token punctuation">,</span> <span class="token string">'build'</span><span class="token punctuation">,</span> <span class="token string">'--type'</span><span class="token punctuation">,</span> <span class="token string">'weapp'</span> <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>解决方案1 全局安装NPX</li> <li>解决方案2(亲测可行)  原因是taro的build无法执行,解决思路跳过自动化部署中的build，deploy-config中的skipBuild设置为true  在package.json里加一段json脚本&quot;deploy:weapp&quot;: &quot;npm run build:weapp &amp;&amp; taro-deploy&quot;</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2020年11月3日星期二下午5点04分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/react/" class="prev">
+        react
+      </a></span> <span class="next"><a href="/taro/common.html">
+        taro中拦截器模板
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.573ade0d.js" defer></script><script src="/assets/js/2.49180a5f.js" defer></script><script src="/assets/js/14.e4a52496.js" defer></script><script src="/assets/js/3.a7939cb3.js" defer></script>
+  </body>
+</html>
